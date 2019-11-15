@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 p-5">
-                    <img src=" {{$user->profile->profileImage()}} " class="img img-responsive rounded-circle" style="height:150px; width:150px;">
+                    <img src=" {{$user->profile->profileImage()}} " class="img img-responsive rounded-circle" style="height:180px; width:180px;">
                 </div>
 
 
@@ -16,7 +16,7 @@
                     <div class="d-flex justify-content-between align-items-baseline">
                         <div class="d-flex align-items-center pb-3">
                             <div class="h2">{{$user->username}}</div>
-                            <followbutton user-id="{{$user->id}}"></followbutton>
+                            <followbutton user-id="{{$user->id}}" follows="{{ $follows }}"></followbutton>
                         </div>
 
                     @can('update', $user->profile)
