@@ -11,11 +11,12 @@
                     <img src=" {{$user->profile->profileImage()}} " class="img img-responsive rounded-circle" style="height:150px; width:150px;">
                 </div>
 
+
                 <div class="col-9 pt-5">
                     <div class="d-flex justify-content-between align-items-baseline">
                         <div class="d-flex align-items-center pb-3">
                             <div class="h2">{{$user->username}}</div>
-                            <followbutton></followbutton>
+                            <followbutton user-id="{{$user->id}}"></followbutton>
                         </div>
 
                     @can('update', $user->profile)
