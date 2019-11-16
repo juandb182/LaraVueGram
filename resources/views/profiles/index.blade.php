@@ -20,7 +20,7 @@
                         </div>
 
                     @can('update', $user->profile)
-                    <a href="../p/create">Add New post</a>
+                    <a class="btn btn-light" href="../p/create">Add New post</a>
                     @endcan
                     </div>
                     @can('update', $user->profile)
